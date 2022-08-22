@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <script src="script.js" defer></script>
+    </head>
+    <body class="bg-emerald-100 flex items-center justify-center min-h-screen">
+        <div class="flex flex-col items-start justify-center bg-neutral-100 mx-6 px-6 h-80 w-96 rounded-md">
+            <div class="p-2 bg-cyan-50 w-full">
+                <div class="flex items-center relative h-12">
+                    <span id="pass" class="break-all"></span>
+                    <button id="copy" class="absolute inset-y-0 right-0 bg-transparent hover:bg-cyan-900 text-cyan-200 p-1 rounded-lg text-xs max-h-full">
+                        <span class="material-symbols-outlined">
+                            content_copy
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="w-full">
+                <button id="generate" class="bg-cyan-900 text-sky-100 p-1 rounded-lg mt-2 w-full border-0 block ">Generate Password</button>
+            </div>
+            <div class="w-full mt-12">
+                <div class="flex justify-between mx-1 my-1 text-blue-900">
+                    <label for="len">Password Length</label>
+                    <input class="text-right border-solid border-2 rounded-lg border-cyan-900 bg-sky-100 text-blue-900" type="number" id="length" min="4" max="40" value="12"/>
+                </div>
+                <div class="flex justify-between mx-1 my-1 text-blue-900">
+                    <label for="upper">Contain Uppercase Letters</label>
+                    <input class="" type="checkbox" id="upper">
+                </div>
+                <div class="flex justify-between mx-1 my-1 text-blue-900">
+                    <label for="lower">Contain Lowercase Letters</label>
+                    <input class="" type="checkbox" id="lower">
+                </div>
+                <div class="flex justify-between mx-1 my-1 text-blue-900">
+                    <label for="number">Contain Number</label>
+                    <input class="" type="checkbox" id="number">
+                </div>
+                <div class="flex justify-between mx-1 my-1 text-blue-900">
+                    <label for="symbol">Contain Symbol</label>
+                    <input class="" type="checkbox" id="symbol">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

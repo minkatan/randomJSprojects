@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../output.css">
+  <title>Task Lists</title>
+</head>
+<body>
+  <div class="flex flex-col items-center justify-center space-y-8 h-full bg-stone-100 m-8 py-8 rounded border-0">
+    <h1 class="text-4xl text-blue-900 font-bold">Task List</h1>
+    <!-- create form -->
+    <form id="task-form" class="flex flex-col items-start my-4 p-4 border-b-2 border-solid border-grey-300 w-11/12">
+      <h2 class="text-2xl font-semibold text-blue-900">New Task</h2>
+      <div class="mt-2 w-full flex justify-between">
+        <!-- input task -->
+        <input class="mr-4 py-2 px-2 w-10/12" id="task-input" type="text" placeholder="Add new task" autocomplete="off"/>
+        <!-- add task -->
+        <input class="cursor-pointer border border-solid border-yellow-600 rounded-lg bg-amber-500 text-white py-2 px-4 shadow text-center" id="add-task" type="submit" value="Add Task" />
+      </div>
+    </form>
+
+    <div class="flex flex-col space-y-2 items-start p-4 border-b-2 border-solid border-grey-100 w-11/12">
+      <h2 class="flex w-full items-start text-2xl font-semibold text-blue-900 border-b border-solid pb-2">List of Tasks</h2>
+      <ul class="w-full space-y-2" id="task-list">
+      </ul>
+      <input type="text" placeholder="filter tasks" id="filter-tasks" class="bg-stone-100 text-inherit border-b-4 border-solid border-gray-200 w-full" autofocus="off" />
+    </div>
+
+    <div class="bg-black rounded-lg text-white text-xl px-6 py-2 cursor-pointer">
+      <button id="clear-tasks">Clear Tasks</button>
+    </div>
+    
+    <script src="./app.js"></script>
+
+  </div>
+</body>
+</html>

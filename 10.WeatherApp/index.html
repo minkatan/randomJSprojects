@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body class="bg-sky-300 flex flex-col items-center justify-center m-0 min-h-screen">
+        <div class="flex flex-col items-center justify-center bg-sky-100 w-full h-96 m-0">
+            <h1 class="text-4xl text-sky-800 p-4">How's the Weather Today?</h1>
+            <div id="today" class="m-0">
+                <span class="material-symbols-outlined">
+                    wb_sunny
+                </span>                
+                18
+            </div>
+            <form id="input" class="mt-4">
+                <input id="search" class="h-12 p-4 text-center text-lg rounded border-0 bg-sky-100" type="text" placeholder="Search By Location" autocomplete="off">
+            </form>
+            <div class="flex items-center justify-center mt-2">
+                <ul id="future" class="flex flex-row justify-evenly m-2 mx-8 px-8">
+                    <li class="m-4">
+                        <span class="material-symbols-outlined">
+                        wb_sunny
+                        </span>
+                        12
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </body>
+</html>

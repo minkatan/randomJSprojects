@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="../output.css">
+</head>
+<body>
+    <div class="container mx-auto mt-6">
+        <h1 class="text-3xl text-sky-900 font-bold">Add Book</h1>
+        <form id="book-form" class="flex flex-col text-sky-900">
+            <div class="my-4">
+                <label for="title" class="text-xl font-semibold">Title</label>
+                <input class="border shadow rounded border-sky-900 w-full mt-2 focus:bg-blue-50 p-2" type="text" id="title" value="journey">
+            </div>
+            <div class="my-4">
+                <label for="author" class="text-xl font-semibold">Author</label>
+                <input class="border shadow rounded border-sky-900 w-full mt-2 focus:bg-blue-50 p-2" type="text" id="author" value="empire">
+            </div>
+            <div class="my-4">
+                <label for="ISBN" class="text-xl font-semibold">ISBN</label>
+                <input class="border shadow rounded border-sky-900 w-full mt-2 focus:bg-blue-50 p-2" type="text" id="isbn" value="12345">
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="border bg-cyan-800 text-white w-full rounded-lg py-2 cursor-pointer">
+            </div>
+        </form>
+        <hr class="my-4" />
+        <table class="table-auto w-full text-sky-900">
+            <thead class="w-full">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+                <tbody id="book-list">
+                </tbody>
+            </thead>
+        </table>
+    </div>
+    <script src="./app6.js"></script>
+</body>
+</html>

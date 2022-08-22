@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="../output.css">
+</head>
+<body>
+    <!-- submission for guesses -->
+    <div id="game" class="flex flex-col m-4 p-4" style="display: flex;">
+        <h1 class="text-3xl font-bold pb-2">Guess the Number</h1>
+        <p id="range"></p>
+        <div id="input">
+            <input id="guess" type="number" class="border shadow-xl p-2 m-4" disabled/>
+            <button id="guess-submit" type="button" name="submit" class="border border-solid border-amber-600 bg-amber-300 text-yellow-900 px-8 py-2 rounded-lg shadow-xl cursor-pointer" disabled>
+                Submit
+            </button>
+        </div>
+    </div>
+    <!-- input for min and max number -->
+    <div id="option" class="flex flex-col justify-center items-center bg-amber-100 p-4 rounded shadow" style="display: flex">
+        <h1 class="text-center font-bold text-3xl">Please Fill in the Range and Guesses</h1>
+        <div class="flex justify-between items-center mt-4">
+            <div class="p-2">
+                <label for="min" class="bg-gray-200 p-2">Lowest Number:</label>
+                <input type="number" id="min" class="w-16"/>
+            </div>
+            <div class="p-2">
+                <label for="max" class="bg-gray-200 p-2">Highest Number:</label>
+                <input type="number" id="max" class="w-16"/>
+            </div>
+            <div class="p-2">
+                <label for="guess-allowed" class="bg-gray-200 p-2">Guesses Allowed:</label>
+                <input type="number" id="guess-allowed" class="w-16"/>
+            </div>
+        </div>
+    </div>
+    <!-- winning and lossing message -->
+    <p id="message" class="container mx-auto text-3xl px-2 py-4 m-8"></p>
+</body>
+<script src="./app.js"></script>
+</html>

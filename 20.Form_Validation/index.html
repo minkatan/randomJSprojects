@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href=".././output.css">
+</head>
+<body>
+    <main>
+        <div class="mt-10 ml-10">
+            <div class="md:grid md:grid-cols-6 md:gap-6">
+              <div class="mt-5 md:mt-0 md:col-span-2">
+                <form action="#" method="POST">
+                  <div class="shadow overflow-hidden sm:rounded-md">
+                    <div class="px-4 py-5 bg-white sm:p-6">
+                      <div class="grid grid-cols-6 gap-6">
+                        
+                        <div class="col-span-6">
+                          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                          <input type="text" name="name" id="name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow sm:text-sm border-gray-500 rounded-md py-2">
+                          <div id="name-error" class="text-red-300 text-sm py-2" style="display: none;">
+                              Name must be between 2 to 10 characters
+                          </div>
+                        </div>
+          
+                        <div class="col-span-6">
+                          <label for="zipcode" class="block text-sm font-medium text-gray-700">Zipcode</label>
+                          <input type="text" name="zipcode" id="zipcode" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow sm:text-sm border-gray-500 rounded-md py-2">
+                          <div id="zipcode-error" class="text-red-300 text-sm py-2" style="display: none;">
+                              Enter a valid zipcode
+                          </div>
+                        </div>
+          
+                        <div class="col-span-6">
+                          <label for="email-address" class="block text-sm font-medium text-gray-700">Email address</label>
+                          <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow sm:text-sm border-gray-500 rounded-md py-2">
+                          <div id="email-error" class="text-red-300 text-sm py-2" style="display: none;">
+                              Enter a valid email
+                          </div>
+                        </div>
+          
+                        <div class="col-span-6">
+                          <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                          <input type="text" name="phone-number" id="phone-number" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow sm:text-sm border-gray-500 rounded-md py-2">
+                          <div id="phone-error" class="text-red-300 text-sm py-2" style="display: none;">
+                              Enter a valid phone number
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                      <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Save</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

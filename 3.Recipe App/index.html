@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recipe</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+    </head>
+    <body>
+        <div class="mobile-ctn">
+            <header>
+                <input type="text" id="search-term">
+                <button id="search">
+                    <i class="material-icons">search</i>
+                </button>
+            </header>
+            <div class="fav-ctn">
+                <h3>Favourite Meal</h3>
+                <ul class="fav-meals">
+                </ul>
+            </div>
+            <div class="meals"></div>
+        </div>
+
+        <div class="pop-ctn hidden">
+            <div class="pop">
+                <button class="close-popup">
+                    <i class="material-icons">close</i>
+                </button>
+                <div class="meal-info"></div>
+
+                <!-- add present like the recipe for the movie's details -->
+            </div>
+        </div>
+    </body>
+</html>
